@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this file exists or adjust path -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Platform Report</h1>
+
+    <button onclick="loadAllCounts()">Load All Counts</button>
+    <button onclick="hideAllCounts()">Hide All Counts</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Metric</th>
+                <th>Count</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Total Users</td>
+                <td id="users">--</td>
+                <td>
+                    <button onclick="loadCount('users')">Load</button>
+                    <button onclick="hideCount('users')">Hide</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Students</td>
+                <td id="students">--</td>
+                <td>
+                    <button onclick="loadCount('students')">Load</button>
+                    <button onclick="hideCount('students')">Hide</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Instructors</td>
+                <td id="instructors">--</td>
+                <td>
+                    <button onclick="loadCount('instructors')">Load</button>
+                    <button onclick="hideCount('instructors')">Hide</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Courses</td>
+                <td id="courses">--</td>
+                <td>
+                    <button onclick="loadCount('courses')">Load</button>
+                    <button onclick="hideCount('courses')">Hide</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Enrollments</td>
+                <td id="enrollments">--</td>
+                <td>
+                    <button onclick="loadCount('enrollments')">Load</button>
+                    <button onclick="hideCount('enrollments')">Hide</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Lessons</td>
+                <td id="lessons">--</td>
+                <td>
+                    <button onclick="loadCount('lessons')">Load</button>
+                    <button onclick="hideCount('lessons')">Hide</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Payments</td>
+                <td id="payments">--</td>
+                <td>
+                    <button onclick="loadCount('payments')">Load</button>
+                    <button onclick="hideCount('payments')">Hide</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Certificates</td>
+                <td id="certificates">--</td>
+                <td>
+                    <button onclick="loadCount('certificates')">Load</button>
+                    <button onclick="hideCount('certificates')">Hide</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Discussions</td>
+                <td id="discussions">--</td>
+                <td>
+                    <button onclick="loadCount('discussions')">Load</button>
+                    <button onclick="hideCount('discussions')">Hide</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Categories</td>
+                <td id="categories">--</td>
+                <td>
+                    <button onclick="loadCount('categories')">Load</button>
+                    <button onclick="hideCount('categories')">Hide</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="JS/report.js"></script>
+</body>
+</html>
